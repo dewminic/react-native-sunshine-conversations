@@ -93,10 +93,10 @@ public class ReactNativeSmooch extends ReactContextBaseJavaModule {
         User.getCurrentUser().setEmail(email);
     }
 
-    // @ReactMethod
-    // public void setUserProperties(ReadableMap properties) {
-    //     User.getCurrentUser().addProperties(getUserProperties(properties));
-    // }
+    @ReactMethod
+    public void setUserProperties(ReadableMap properties) {
+        User.getCurrentUser().addMetadata(getUserProperties(properties));
+    }
 
     private Map<String, Object> getUserProperties(ReadableMap properties) {
         ReadableMapKeySetIterator iterator = properties.keySetIterator();
