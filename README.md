@@ -2,7 +2,7 @@
 React Native wrapper for Smooch.io. 
 This repo is forked from https://github.com/zendesk/react-native-sunshine-conversations
 
-To mtach with the latest Android versions.
+Modification done to mtach with the latest Android versions.
 
 
 Installing Smooch on React Native
@@ -17,9 +17,11 @@ Next, grab this React Native module with `yarn add @dewminic/react-native-smooch
 Link it! `npx react-native-asset react-native-smooch`
 
 ## iOS
-IOS modification not added. Need to test.
+No modification done for IOS.
+Follow the same instruction to integrate with IOS as in https://github.com/zendesk/react-native-sunshine-conversations
 
 ## Android
+Modification added to work with Android 13 (API level 33).
 
 * Below is same as the instruction in the main repo.
 
