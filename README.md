@@ -23,8 +23,6 @@ Follow the same instruction to integrate with IOS as in https://github.com/zende
 ## Android
 Modification added to work with Android 13 (API level 33).
 
-* Below is same as the instruction in the main repo.
-
 You can easily add a binding to the [Smooch Android SDK](https://github.com/smooch/smooch-android) in your React Native application by following the instructions below.
 
 * If the Package cannot be autolinked, it can be added manually add in your `Application` class.
