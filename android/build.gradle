@@ -1,31 +1,36 @@
 allprojects {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
         maven {
             url "https://maven.google.com"
         }
+        jcenter()
     }
 }
 
 buildscript {
     repositories {
+        google()
+        mavenCentral()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath "com.android.tools.build:gradle:7.2.1"
+        classpath 'com.google.gms:google-services:4.3.14'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -38,8 +43,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.facebook.react:react-native:+'
-    compile 'io.smooch:core:5.+'
-    compile 'io.smooch:ui:5.+'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'io.smooch:core:9.1.1'
+    implementation 'io.smooch:ui:9.1.1'
 }
+
