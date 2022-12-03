@@ -1,7 +1,8 @@
-# ⚠️ NOTICE: The repo is no longer maintained. 
-
 # react-native-smooch
 React Native wrapper for Smooch.io. 
+This repo is forked from https://github.com/zendesk/react-native-sunshine-conversations
+
+To mtach with the latest Android versions.
 
 
 Installing Smooch on React Native
@@ -11,63 +12,16 @@ First, make sure you've [signed up for Smooch](https://app.smooch.io/signup)
 
 If you don't already have a React Native application setup, follow the instructions [here](https://facebook.github.io/react-native/docs/getting-started.html) to create one.
 
-Next, grab this React Native module with `npm install react-native-smooch`
+Next, grab this React Native module with `yarn add @dewminic/react-native-smooch@https://github.com/dewminic/react-native-sunshine-conversations`
 
 Link it! `npx react-native-asset react-native-smooch`
 
 ## iOS
- * With CococaPods, you can add the react-native-smooch Pod in your `Podfile` like so:
-
- ```
- pod 'react-native-smooch',
-     :path => '../node_modules/react-native-smooch'
- ```
-
- * You must also have your React dependencies defined in your Podfile as described [here](http://facebook.github.io/react-native/releases/0.31/docs/troubleshooting.html#missing-libraries-for-react), for example:
-
- ```
-target 'myapp' do
-
-    pod 'react-native-smooch',
-        :path => '../node_modules/react-native-smooch'
-
-	pod 'React',
-        :subspecs => [
-            'Core',
-            'RCTImage',
-            'RCTNetwork',
-            'RCTPushNotification',
-            'RCTText',
-        ], :path => '../node_modules/react-native'
-
-    pod 'yoga',
-        path: '../node_modules/react-native/ReactCommon/yoga/yoga.podspec'
-
-end
- ```
-
- * Install pods by running `pod install`.
-
- * Without CocoaPods, you can add Smooch by navigating to your React Native project's `ios` directory and following [the manual steps here](http://docs.smooch.io/ios/#adding-smooch-to-your-app).
-
- * Open your project's .xcworkspace file in XCode and initialize Smooch with your app id inside of applicationDidFinishLaunchingWithOptions.
-
-```
-#import <Smooch/Smooch.h>
-
-...
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Initialize Smooch - these instructions are also available on [app.smooch.io](https://app.smooch.io)
-    [Smooch initWithSettings:[SKTSettings settingsWithAppId:@"YOUR_APP_ID"] completionHandler:^(NSError * _Nullable error, NSDictionary * _Nullable userInfo) {
-        // Your code after init is complete
-    }];
-}
-```
-
-You're now ready to start interacting with Smooch in your React Native app.
+IOS modification not added. Need to test.
 
 ## Android
+
+* Below is same as the instruction in the main repo.
 
 You can easily add a binding to the [Smooch Android SDK](https://github.com/smooch/smooch-android) in your React Native application by following the instructions below.
 
