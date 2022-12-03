@@ -28,6 +28,7 @@ You can easily add a binding to the [Smooch Android SDK](https://github.com/smoo
 * If the Package cannot be autolinked, it can be added manually add in your `Application` class.
 Add the `ReactNativeSmoochPackage` to the list of packages 
 
+```java
 @Override
 @Override
     protected List<ReactPackage> getPackages() {
