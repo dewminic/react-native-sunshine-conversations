@@ -25,23 +25,10 @@ Modification added to work with Android 13 (API level 33).
 
 You can easily add a binding to the [Smooch Android SDK](https://github.com/smooch/smooch-android) in your React Native application by following the instructions below.
 
-* If the Package cannot be autolinked, it can be added manually add in your `Application` class.
-Add the `ReactNativeSmoochPackage` to the list of packages 
-
-```java
-@Override
-@Override
-    protected List<ReactPackage> getPackages() {
-      @SuppressWarnings("UnnecessaryLocalVariable")
-      List<ReactPackage> packages = new PackageList(this).getPackages();
-      packages.add(new ReactNativeSmoochPackage());
-      return packages;
-    }
-```
-
 * Add `Smooch.init` to the `onCreate` method of your `Application` class.
 
 ```java
+import io.smooch.core.InitializationStatus;
 import io.smooch.core.Settings;
 import io.smooch.core.Smooch;
 import io.smooch.core.SmoochCallback;
