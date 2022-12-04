@@ -5,12 +5,22 @@
   "main": "./lib/SmoochClient.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dewminic/react-native-sunshine-conversations"
+    "url": "git+https://github.com/dewminic/react-native-sunshine-conversations.git"
   },
   "author": "Initial Author: Mike Gozzo, Modification: Dewmini",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dewminic/react-native-sunshine-conversations/issues"
   },
-  "homepage": "https://github.com/dewminic/react-native-sunshine-conversations"
+  "homepage": "https://github.com/dewminic/react-native-sunshine-conversations",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smooch",
+    "chatbot"
+  ]
 }

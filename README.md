@@ -12,9 +12,7 @@ First, make sure you've [signed up for Smooch](https://app.smooch.io/signup)
 
 If you don't already have a React Native application setup, follow the instructions [here](https://facebook.github.io/react-native/docs/getting-started.html) to create one.
 
-Next, grab this React Native module with `yarn add @dewminic/react-native-smooch@https://github.com/dewminic/react-native-sunshine-conversations`
-
-Link it! `npx react-native-asset react-native-smooch`
+Next, grab this React Native module with `yarn add @dewminic/react-native-smooch`
 
 ## iOS
 No modification done for IOS.
@@ -58,7 +56,7 @@ Using Smooch in your React Native App
 
 ### Require the module
 ```javascript
-const Smooch = require('react-native-smooch');
+const Smooch = require('@dewminic/react-native-smooch');
 ```
 
 ### Show the conversation screen
@@ -88,5 +86,5 @@ Smooch.setSignedUpAt((new Date).getTime());
 
 ### Associate key/value pairs with the user
 ```javascript
-Smooch.setUserProperties({"whenDidYouFsckUp": "aLongTimeAgo"});
+Smooch.setUserProperties({"myPrpertyName": "mpropertyValuey"});
 ```
