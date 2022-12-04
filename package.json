@@ -1,16 +1,16 @@
 {
   "name": "react-native-smooch",
   "version": "1.0.2",
-  "description": "A React Native client for smooch.io",
+  "description": "A React Native client for smooch.io to support latest Android version.",
   "main": "./lib/SmoochClient.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smooch/react-native-smooch.git"
+    "url": "https://github.com/dewminic/react-native-sunshine-conversations"
   },
-  "author": "Mike Gozzo",
+  "author": "Initial Author: Mike Gozzo, Modification: Dewmini",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smooch/react-native-smooch/issues"
+    "url": "https://github.com/dewminic/react-native-sunshine-conversations/issues"
   },
-  "homepage": "https://smooch.io/is"
+  "homepage": "https://github.com/dewminic/react-native-sunshine-conversations"
 }
