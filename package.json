@@ -1,6 +1,6 @@
 {
   "name": "@dewminic/react-native-smooch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React Native client for smooch.io to support latest Android version.",
   "main": "./lib/SmoochClient.js",
   "repository": {
